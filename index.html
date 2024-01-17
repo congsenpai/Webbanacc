@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-free-6.5.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-item--text">Cửa hàng trực tuyến CS Shop</span>
+                            <span class="header__navbar-item--separate"></span>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-item--remove">Kết nối</span>
+                            <a href="https://www.facebook.com/nguyenduc.congthongthai" class="header__navbar-icon">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+
+
+
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__notification-hover ">
+                            <a href="" class="header__navbar-item-link ">
+                                <i class="fa-regular fa-bell header__navbar-icon"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notification ">
+                                <header class="header__notification-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notification-list">
+                                    <li class="header__notification-item">
+                                        <a href="" class="header__notification-link">
+                                            <span>
+                                                <img src="/assets/img/money.png" alt=""
+                                                    class="header__notification-img">
+                                            </span>
+                                            <div class="header__notification-info">
+                                                <span class="header__notification-name">Bạn đã nạp thành công 200000
+                                                    VND
+                                                    vào
+                                                    tài khoản </span>
+                                                <span class="header__notification-description">Nạp tiền tài
+                                                    khoản</span>
+                                            </div>
+                                            <div class="header__notification-new">
+                                                <img src="/assets/img/new.png" alt=""
+                                                    class="header__notification-new--img">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notification-item">
+                                        <a href="" class="header__notification-link">
+                                            <span>
+                                                <img src="/assets/img/money.png" alt=""
+                                                    class="header__notification-img">
+                                            </span>
+                                            <div class="header__notification-info">
+                                                <span class="header__notification-name">Bạn đã mua tài khoản genshin
+                                                    impact thành công thông tin đăng nhập của tài khoản sẽ được gửi
+                                                    vào
+                                                    gmail của bạn</span>
+                                                <span class="header__notification-description">Mua tài khoản</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notification-item">
+                                        <a href="" class="header__notification-link">
+                                            <span>
+                                                <img src="/assets/img/money.png" alt=""
+                                                    class="header__notification-img">
+                                            </span>
+                                            <div class="header__notification-info">
+                                                <span class="header__notification-name">Bạn đã nạp thành công 100000
+                                                    VND
+                                                    vào
+                                                    tài khoản </span>
+                                                <span class="header__notification-description">Nạp tiền tài
+                                                    khoản</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notification-footer">
+                                    <a href="" class="header__notification-footer--btn">Xem tất cả</a>
+                                </footer>
+
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="fa-regular fa-circle-question header__navbar-icon"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--bold ">
+                            Đăng ký
+                            <span class="header__navbar-item--separate"></span>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--bold">Đăng nhập</li>
+                    </ul>
+
+                </nav>
+                <!-- header search bar -->
+                <div class="header__search-bar">
+                    <a class="header__logo" href="">
+                        <img src="assets/img/logo.png" alt="" class="header__logo-img">
+                    </a>
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" placeholder="Nhập tên game hoặc tags để tìm kiếm" class="searchBar">
+                            <div class="header__search-history">
+                                <header class="header__search--heading">Lịch sử tìm kiếm</header>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Genshin Impact</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Fate Grand Order</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="select__label">
+                                Trong shop
+                                <i class="fa-solid fa-chevron-down select__icon"></i>
+                                <ul class="header__search-select--option">
+                                    <li class="select__option select__option--active btn--hover">
+                                        <span>Trong shop</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                    <li class="select__option btn--hover">
+                                        <span>Ngoài shop</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                </ul>
+                            </span>
+                            <button class="btn btn--primary header__search--btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+
+
+                        </div>
+                    </div>
+                    <a class="header__cart" href="">
+                        <div class="header__cart--icon">
+                            <i class="fas fa-shopping-cart cart-size text-white"></i>
+                            <span class="header__cart--text"> Giỏ hàng</span>
+                            <span class="header__cart--notice">3</span>
+                        </div>
+                        <!-- cart no item -->
+                            <!-- <div class="cart__box cart__box--no-item">
+                               <img src="/assets/img/goShopping.png" alt="" class="cart__box--no-item-img">
+                               <span class="cart__box--no-item-text">
+                                Chưa có sản phẩm nào trong giỏ hàng
+                               </span>
+                            </div> 
+                        </a> -->
+                        <!-- cart has item -->
+
+                        <div class="cart__box cart__box--has-item">
+                            <span class="cart__box--has-item--heading">Sản phẩm đã thêm</span>
+                            <ul class="product__list">
+                                <li class="product__item">
+                                    <div class="product__item--content">
+                                        <img src="assets/img/AzurLaneIcon.png" alt="" class="product__item--img">
+                                        <div class="product__item-text">
+                                            <div class="product__item--header">
+                                                <h5 class="product__item--name">Tài khoản Azur Lane</h5>
+                                                <div class="product__item--sale">
+                                                    <span class="product__item--price">2000000</span>
+                                                    <span class="product__item--multiply">x</span>
+                                                    <span class="product__item--quantity">1</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="product__item--footer">
+                                                <span class="product__item--description"> Phân loại: Tài khoản
+                                                    reroll</span>
+                                                <span class="product__item-delete">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <li class="product__item">
+                                    <div class="product__item--content">
+                                        <img src="assets/img/FgoIcon.jpg" alt="" class="product__item--img">
+                                        <div class="product__item-text">
+                                            <div class="product__item--header">
+                                                <h5 class="product__item--name">Tài khoản Fate Grand Order</h5>
+                                                <div class="product__item--sale">
+                                                    <span class="product__item--price">2000000</span>
+                                                    <span class="product__item--multiply">x</span>
+                                                    <span class="product__item--quantity">1</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="product__item--footer">
+                                                <span class="product__item--description"> Phân loại: Tài khoản
+                                                    khởi đầu</span>
+                                                <span class="product__item-delete">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__item">
+                                    <div class="product__item--content">
+                                        <img src="assets/img/genshinIcon.jpg" alt="" class="product__item--img">
+                                        <div class="product__item-text">
+                                            <div class="product__item--header">
+                                                <h5 class="product__item--name">Tài khoản Genshin Impact</h5>
+                                                <div class="product__item--sale">
+                                                    <span class="product__item--price">20000000</span>
+                                                    <span class="product__item--multiply">x</span>
+                                                    <span class="product__item--quantity">1</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="product__item--footer">
+                                                <span class="product__item--description"> Phân loại: Tài khoản
+                                                    vip</span>
+                                                <span class="product__item-delete">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                </li>
+                            </ul>
+                            <button class="btn btn--primary cart__box--has-item-btn">Xem giỏ hàng</button>
+                        </div>
+
+                    </a>
+                </div>
+
+            </div>
+        </header>
+        <div class="container">
+
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+    <!-- modal layout -->
+    <!-- <div class="modal">
+        <div class="modal__overlay">
+        </div>
+        <div class="modal__body">
+
+            <div class="auForm">
+                <div class="auForm__container">
+                    <div class="auForm__header">
+                        <h3 class="auForm__register">Đăng ký</h3>
+                        <span class="auForm__switch--btn ">Đăng nhập</span>
+                    </div>
+
+                    <div class="auForm__form">
+                        <div class="auForm__group">
+                            <input type="text" class="auForm__input" placeholder="Nhập tên người dùng">
+                            <input type="password" class="auForm__input" placeholder="Nhập mật khẩu">
+                            <input type="password" class="auForm__input" placeholder="Nhập lại mật khẩu">
+
+                        </div>
+                    </div>
+
+                    <div class="auForm__aside">
+                        <p class="auForm__policy-text"> Bằng việc đăng ký tài khoản bạn đã đồng ý với
+                            <a href="" class="auForm__policy-link">Chính sách bảo mật</a>
+                            &
+                            <a href="" class="auForm__policy-link">Điều khoản dịch vụ </a>
+                            của chúng tôi
+                        </p>
+                    </div>
+
+                    <div class="auForm__controls">
+                        <button class="btn btn--sizeM btn--hover auForm__controls-back"> TRỞ LẠI</button>
+                        <button class="btn btn--sizeM btn--primary"> ĐĂNG KÝ</button>
+                    </div>
+                </div>
+
+                <div class="auForm__social">
+                    <a href="" class="btn btn--with-icon auForm__social--leftBtn">
+                        <div class="btn__icon">
+                            <img alt="" src="assets/img/facebook.png" class="btn__icon--facebook"> </img>
+                        </div>
+                        <span class="auForm__social--title">Kết nối tới Facebook</span>
+                    </a>
+
+                    <a href="" class="btn btn--with-icon auForm__social--rightBtn ">
+                        <div class="btn__icon">
+                            <img alt="" src="assets/img/search.png" class="btn__icon--google"> </img">
+                        </div>
+                        <span class="auForm__social--title">Kết nối với Google</span>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="auForm">
+                <div class="auForm__container">
+                    <div class="auForm__header">
+                        <h3 class="auForm__register">Đăng nhập</h3>
+                        <span class="auForm__switch--btn">Đăng ký</span>
+                    </div>
+
+                    <div class="auForm__form">
+                        <div class="auForm__group">
+                            <input type="text" class="auForm__input" placeholder="Nhập tên người dùng">
+                            <input type="password" class="auForm__input" placeholder="Nhập mật khẩu">
+                        </div>
+                    </div>
+
+                    <div class="auForm__aside">
+                        <div class="auForm__help">
+                            <a href="" class="auForm__help-forgot auForm__help--text">Quên mật khẩu</a>
+                            <span class="auForm__help--separate"></span>
+                            <a href="" class="auForm__help-help auForm__help--text">Cần trợ giúp ?</a>
+                        </div>
+                    </div>
+
+                    <div class="auForm__controls">
+                        <button class="btn btn--sizeM auForm__controls-back btn--hover"> TRỞ LẠI</button>
+                        <button class="btn btn--sizeM btn--primary"> ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+
+                <div class="auForm__social">
+                    <a href="" class="btn btn--with-icon auForm__social--leftBtn">
+                        <div class="btn__icon">
+                            <img alt="" src="assets/img/facebook.png" class="btn__icon--facebook"> </img>
+                        </div>
+                        <span class="auForm__social--title">Kết nối tới Facebook</span>
+                    </a>
+                    
+                    <a href="" class="btn btn--with-icon auForm__social--rightBtn ">
+                        <div class="btn__icon">
+                            <img alt="" src="assets/img/search.png" class="btn__icon--google"> </img">
+                        </div>
+                        <span class="auForm__social--title">Kết nối tới Google</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div> -->
+
+</body>
+
+</html>

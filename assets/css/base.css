@@ -1,0 +1,147 @@
+:root {
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+    --primary-color:#2556f9;
+    --decreaseMain-color:#3E76FC;
+    --decreaseWhite-color:rgba(237,237,237,0.5);
+    --border-color:rgb(189, 188, 188);
+    --header-height:100px;
+    --navbar-height:34px;
+    --searchbar--height:calc(var(--header-height) - var(--navbar-height));
+    --textDecrease-color:rgb(107, 105, 105);
+
+}
+
+* {
+    box-sizing: inherit;
+    
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto',sans-serif;
+    box-sizing: border-box;
+
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0px auto;
+
+}
+
+.grid__full-width {
+    width:100%;
+    
+}
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.span{
+  font-size: 1.4rem;
+}
+/* Animation */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        background-color: rgba(255,255,255,0.01);
+    }
+    to {
+        opacity: 1;
+        background-color: rgba(255,255,255,1);
+    }
+}
+@keyframes Growth{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* modal */
+.modal{
+    position:fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    animation: fadeIn linear 0.1s;
+  }
+  .modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .modal__body{
+    background-color:#fff;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+    animation: Growth linear 0.2s;
+  }
+  /* button style */
+  .btn{
+    height: 36px;
+    border: none; 
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: 1.3rem;
+    padding: 0 8px;
+    outline: none;
+    color: var(--text-color);
+    cursor: pointer;
+    background-color: var(--white-color);
+  }
+
+  .btn.btn--primary{
+    background-color: var(--primary-color);
+    color:var(--white-color)
+  }
+  .btn.btn--primary:hover{
+    background-color: var(--decreaseMain-color);
+  }
+  .btn--hover:hover{
+    background-color: var(--decreaseWhite-color);
+  }
+  .btn.btn--disabled{
+    cursor:default;
+    background-color: #c3c3c3;
+    color:#fcfcfc;
+  }
+  .btn.btn--sizeS{
+    font-size: 12px;
+    height: 28px;
+    width: 60px;
+  }
+  .btn.btn--sizeM{
+    width: 100px;
+    height: 32px;
+  }
+  .btn.btn--sizeL{
+    width: 162px;
+    height:35px;
+  }
+  
+  .btn__icon--facebook{
+    object-fit: contain;
+    width: 20px;
+    height: 20px;
+ 
+  }
+  .btn__icon--google{
+    object-fit: contain;
+    width: 20px;
+    height: 20px;
+   
+  }
+  
