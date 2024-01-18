@@ -34,7 +34,7 @@
 }
 .header__search-history {
   position: absolute;
-  top: calc(100% + 8px);
+  top: calc(100% + 3px);
   left: 0;
   width: calc(100% - 16px);
   background-color: var(--white-color);
@@ -111,7 +111,7 @@
 .cart__box {
   background-color: var(--white-color);
   position: absolute;
-  top: 100%;
+  top: 92%;
   width: 300%;
   right: 0px;
   margin: 4px 2px;
@@ -308,7 +308,7 @@ margin-bottom: 12px;
   list-style: none;
   padding-inline-start: 0;
   border-radius: 2px;
-  box-shadow: 0 1px 2px #ccc;
+  box-shadow: 0 1px 5px #b7b7b7;
   display: none;
   animation: fadeIn ease-in 0.2s;
   will-change: opacity;
@@ -413,6 +413,8 @@ margin-bottom: 12px;
 .header__navbar-item--remove {
   cursor: text;
   color: var(--white-color);
+  margin: 0 4px 0 -12px;
+
 }
 
 /* header user box */
@@ -436,7 +438,7 @@ margin-bottom: 12px;
   border-radius: 2px;
   z-index: 1;
   display: none;
-  box-shadow: 0 1px 2px #ccc;
+  box-shadow: 0 1px 5px #b7b7b7;
   align-items: center;
   transform-origin: 90% top;
   animation: Growth ease-in 0.2s;
