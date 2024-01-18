@@ -1,10 +1,10 @@
 :root {
     --white-color:#fff;
     --black-color:#000;
-    --text-color:#333;
+    --text-color:rgb(51, 51, 51);
     --primary-color:#2556f9;
     --decreaseMain-color:#3E76FC;
-    --decreaseWhite-color:rgba(237,237,237,0.5);
+    --decreaseWhite-color:rgba(249, 242, 242, 0.8);
     --border-color:rgb(189, 188, 188);
     --header-height:100px;
     --navbar-height:34px;
@@ -46,9 +46,16 @@ ul{
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
 }
-.grid__column{
-
+.grid__column3{
+  padding-left: 12px;
+  padding-right: -12px;
+  width: 25%;
+}
+.grid__column9{
+  width: 75%;
 }
 .span{
   font-size: 1.4rem;
@@ -154,4 +161,12 @@ ul{
     height: 20px;
    
   }
+  body{
+    background-image: url(/assets/img/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #f0f0f0;
+  }
+  
   
