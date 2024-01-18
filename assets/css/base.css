@@ -29,8 +29,9 @@ a{
 }
 ul{
   list-style: none;
+  padding-left: 0;
 }
-
+/* reponsive */
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -45,6 +46,9 @@ ul{
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+}
+.grid__column{
+
 }
 .span{
   font-size: 1.4rem;
