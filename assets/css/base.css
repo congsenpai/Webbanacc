@@ -42,19 +42,25 @@ ul {
 .grid__row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -12px;
-  margin-right: -12px;
+  margin-left: -5px;
+  margin-right: -5px;
 }
-.grid__column3 {
-  padding-left: 12px;
-  padding-right: 12px;
-  width: 25%;
+.grid__column2 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 16.66667%;
 }
-.grid__column9 {
-  width: 75%;
-  padding-left: 12px;
-  padding-right: 12px;
+.grid__column10 {
+  width: 83.33333%;
+  padding-left: 5px;
+  padding-right: 5px;
 }
+.grid__column-product{
+  width: 20%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 .span {
   font-size: 1.4rem;
 }
@@ -230,4 +236,9 @@ ul {
 .selection-item:hover {
   color: var(--primary-color);
   right: -4px;
+}
+.icon-fla--mini{
+  object-fit: contain;
+  height: 12px;
+  width: 12px;
 }
