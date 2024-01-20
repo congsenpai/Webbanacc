@@ -33,6 +33,7 @@
   height: 38px;
   position: relative;
 }
+
 .searchBar:focus ~ .header__search-history {
   display: block;
 }
@@ -276,24 +277,10 @@
   padding-left: 16px;
   align-items: center;
   cursor: pointer;
-}
-
-.select__label {
-  font-size: 1.4rem;
-  color: var(--text-color);
-  font-weight: 500;
   position: relative;
 }
 .select__label:hover .header__search-select--option {
   display: inline-block;
-}
-.select__icon {
-  font-size: 1.4rem;
-  color: var(--text-color);
-  position: relative;
-  top: 1px;
-  padding: 0 8px;
-  margin-right: 2px;
 }
 .btn.btn--primary.header__search--btn {
   width: 60px;
@@ -303,11 +290,12 @@
 .btn.btn--primary.header__search--btn:hover {
   background-color: var(--decreaseMain-color);
 }
-.header__search-select--option {
+.header__search-select--option.selection-box {
   text-decoration: none;
   position: absolute;
   right: 0;
-  top: 100%;
+  left: -3px;
+  top: calc(100% - 4px);
   background-color: var(--white-color);
   width: 130px;
   list-style: none;
@@ -317,6 +305,7 @@
   display: none;
   animation: fadeIn ease-in 0.2s;
   will-change: opacity;
+  z-index: 1;
 }
 .header__search-select--option::after {
   position: absolute;
@@ -779,7 +768,84 @@
 }
 
 .home__filter {
-  background-color: var(--decreaseWhite-color);
+  background-color: #e5e3e36a;
   border-radius: 10px;
   padding-left: 8px;
+  margin-top: 36px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 54px;
 }
+.home__filter-left-container {
+  width: 80%;
+  height: 100%;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+.home__filter-right-container {
+  width: 20%;
+  height: 100%;
+  overflow: hidden;
+  font-size: 1.4rem;
+  margin-left: 16px;
+  padding-left: 34px;
+  display: flex;
+  align-items: center;
+}
+.home__filter-right-container btn {
+  padding: 0px 8px;
+}
+.home__filter-text--left {
+  margin: 0 12px 0 12px;
+}
+.home__filter-text--right {
+  margin: 0 8px;
+}
+
+
+.home__filter-normal.btn {
+  width: 16.6667%;
+  margin-right: 6px;
+}
+.home__filter-left-container {
+  position: relative;
+}
+
+.home__filter-normal {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.home__filter-normal:hover {
+  color: var(--primary-color);
+}
+
+.home__filter-normal::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: var(--primary-color);
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.home__filter-normal:hover::after {
+  width: 100%;
+}
+.home__filter-normal:focus::after {
+  width: 100% !important;
+}
+
+.home__filter-right-container--btn {
+  width: 36px;
+}
+
+

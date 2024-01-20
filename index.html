@@ -112,12 +112,12 @@
                                 Trợ giúp
                             </a>
                         </li>
-                        <!-- <li class="header__navbar-item header__navbar-item--bold ">
+                        <li class="header__navbar-item header__navbar-item--bold ">
                             Đăng ký
                             <span class="header__navbar-item--separate"></span>
                         </li>
-                        <li class="header__navbar-item header__navbar-item--bold">Đăng nhập</li> -->
-                        <li class="header__navbar-item header__navbar-item--bold ">
+                        <li class="header__navbar-item header__navbar-item--bold">Đăng nhập</li>
+                        <!-- <li class="header__navbar-item header__navbar-item--bold ">
 
                             <div class="header__navbar-user">
                                 <img src="assets/img/user.png" alt="" class="header__navbar-item--avatar">
@@ -147,7 +147,7 @@
                             </div>
 
 
-                        </li>
+                        </li> -->
                     </ul>
 
 
@@ -176,7 +176,7 @@
                             <span class="select__label">
                                 Trong shop
                                 <i class="fa-solid fa-chevron-down select__icon"></i>
-                                <ul class="header__search-select--option">
+                                <ul class="header__search-select--option selection-box">
                                     <li class="select__option select__option--active btn--hover">
                                         <span>Trong shop</span>
                                         <i class="fa-solid fa-check"></i>
@@ -287,14 +287,14 @@
         </header>
         <div class="container">
             <div class="grid ">
-                <div class="grid_row">
+                <div class="grid__row">
                     <div class="grid__column3">
                         <nav class="category">
                             <div class="category-box--head">
                                 <i class="fa-solid fa-list"></i>
                                 <h3 class="category-heading">Danh mục sản phẩm</h3>
                             </div>
-    
+
                             <ul class="category-list">
                                 <li class="category-item">
                                     <img src="/assets/img/FgoIcon.jpg" alt="" class="category-icon">
@@ -320,24 +320,44 @@
                         </nav>
                     </div>
                     <div class="grid__column9">
-                    <div class="home__filter">
-                        <span class="home__filter-text">Xắp xếp theo</span>
-                        <button class="btn">Mới nhất</button>
-                        <button class="btn">Bán chạy</button>
-                        <button class="btn">Giá</button>
-                        
-                        <button class="btn">
-                            <i class="fa-solid fa-caret-left"></i>
-                        </button>
-                        <span class="home__filter-text"> 1/12</span>
-                        <button class="btn">
-                            <i class="fa-solid fa-caret-right"></i>
-                        </button>
-                    </div>
+                        <div class="home__filter">
+                            <div class="home__filter-left-container">
+                                <span class="home__filter-text--left">Xắp xếp theo</span>
+                                <button class="btn home__filter-normal">Mới nhất</button>
+                                <button class="btn home__filter-normal">Bán chạy</button>
+                                <button class="btn home__filter-normal">Phổ biến</button>
+
+                                <div class="selection">
+                                    <span class="select__label">Chọn giá</span>
+                                    <i class="fa-solid fa-caret-down select__icon"></i>
+                                    <ul class="selection-box">
+                                        <li class="selection-item">Dưới 100K</li>
+                                        <li class="selection-item"> Từ 100K đến 200K</li>
+                                        <li class="selection-item"> Từ 200K đến 500k</li>
+                                        <li class="selection-item"> Từ 500K đến 1M</li>
+                                        <li class="selection-item"> Từ 1M đến 2M</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="home__filter-right-container">
+                                <button class="btn home__filter-right-container--btn">
+                                    <i class="fa-solid fa-caret-left"></i>
+                                </button>
+                                <span class="home__filter-text--right"> 1/12</span>
+                                <button class="btn home__filter-right-container--btn">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </button>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
-            
+
 
         </div>
         <div class="footer">
