@@ -149,15 +149,15 @@ ul {
 }
 .btn.btn--sizeS {
   font-size: 12px;
-  height: 28px;
-  width: 60px;
+  height: 18px;
+  min-width: 60px;
 }
 .btn.btn--sizeM {
-  width: 100px;
+  min-width: 100px;
   height: 32px;
 }
 .btn.btn--sizeL {
-  width: 162px;
+  min-width: 162px;
   height: 35px;
 }
 
@@ -276,5 +276,9 @@ ul {
 }
 .pagination-item:hover{
   background-color: rgba(224, 221, 221, 0.548);
+}
+a{
+  color:rgb(51,122,183);
+  font-size: 1.3rem;
 }
 

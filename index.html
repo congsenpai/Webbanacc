@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trang chủ | CS Shop</title>
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/base.css">
@@ -45,7 +45,7 @@
                             </a>
                             <div class="header__notification ">
                                 <header class="header__notification-header">
-                                    <h3>Thông báo mới nhận</h3>
+                                    <div>Thông báo mới nhận</div>
                                 </header>
                                 <ul class="header__notification-list">
                                     <li class="header__notification-item">
@@ -314,7 +314,7 @@
                         <nav class="category">
                             <div class="category-box--head">
                                 <i class="fa-solid fa-list"></i>
-                                <h3 class="category-heading">Danh mục sản phẩm</h3>
+                                <div class="category-heading">Danh mục sản phẩm</div>
                             </div>
 
                             <ul class="category-list">
@@ -806,114 +806,96 @@
         </div>
         <div class="footer">
             <div class="grid">
-
+                <div class="grid__row">
+                    <div class="grid__column-product">
+                        <div class="footer__heading">CSSHOP.COM</div>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Điều khoản dịch vụ</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Chính sách bảo mật</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-product">
+                        <div class="footer__heading">
+                            LIÊN HỆ
+                        </div>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <span>Hotline:
+                                    <a href="" class="footer-item__link">0342052826</a>
+                                    (8:00 - 22:00)
+                                </span>
+                            </li>
+                            <li class="footer-item">
+                                <span>Email:
+                                    <a href="" class="footer-item__link">hotro@csshop.com</a>
+                                </span>
+                            </li>
+                            <li class="footer-item">
+                                <a href="https://www.facebook.com/profile.php?id=61556025693102"
+                                    class="footer-item__link">Fanpage</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-product">
+                        <div class="footer__heading">
+                            TÀI KHOẢN
+                        </div>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Đăng ký tài khoản</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Đăng nhập vào tài khoản</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Đăng ký tài khoản Vip</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-product">
+                        <div class="footer__heading">
+                            CHÍNH SÁCH BẢO HÀNH
+                        </div>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Chính sách bảo hành</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Nhân viên hỗ trợ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-product">
+                        <div class="footer-fanpage">
+                            <div class="fanpage-head">
+                                <div class="fanpage-head__avatar">
+                                    <img src="/assets/img/genshinIcon.jpg" alt="" class="icon-fla--medium">
+                                </div>
+                                <div class="fanpage-head__text">
+                                    <a href="https://www.facebook.com/profile.php?id=61556025693102">CS SHOP - Trùm Gacha</a>
+                                    <span>12345 Người theo dõi</span>
+                                </div>
+                            </div>
+                            <div class="fanpage-body">
+                                <div class="btn btn--with-icon btn--sizeS">
+                                    <img alt="" src="assets/img/facebook.png" class="icon-fla--mini"> </img>
+                                    <span class="fanpage-body-text">Theo dõi trang</span>
+                                </div>
+                                <div class="btn btn--with-icon btn--sizeS">
+                                    <i class="fa-solid fa-share icon-fla--mini"></i>
+                                    <span class="fanpage-body-text">Chia sẻ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- modal layout -->
-    <!-- <div class="modal">
-        <div class="modal__overlay">
-        </div>
-        <div class="modal__body">
-
-            <div class="auForm">
-                <div class="auForm__container">
-                    <div class="auForm__header">
-                        <h3 class="auForm__register">Đăng ký</h3>
-                        <span class="auForm__switch--btn ">Đăng nhập</span>
-                    </div>
-
-                    <div class="auForm__form">
-                        <div class="auForm__group">
-                            <input type="text" class="auForm__input" placeholder="Nhập tên người dùng">
-                            <input type="password" class="auForm__input" placeholder="Nhập mật khẩu">
-                            <input type="password" class="auForm__input" placeholder="Nhập lại mật khẩu">
-
-                        </div>
-                    </div>
-
-                    <div class="auForm__aside">
-                        <p class="auForm__policy-text"> Bằng việc đăng ký tài khoản bạn đã đồng ý với
-                            <a href="" class="auForm__policy-link">Chính sách bảo mật</a>
-                            &
-                            <a href="" class="auForm__policy-link">Điều khoản dịch vụ </a>
-                            của chúng tôi
-                        </p>
-                    </div>
-
-                    <div class="auForm__controls">
-                        <button class="btn btn--sizeM btn--hover auForm__controls-back"> TRỞ LẠI</button>
-                        <button class="btn btn--sizeM btn--primary"> ĐĂNG KÝ</button>
-                    </div>
-                </div>
-
-                <div class="auForm__social">
-                    <a href="" class="btn btn--with-icon auForm__social--leftBtn">
-                        <div class="btn__icon">
-                            <img alt="" src="assets/img/facebook.png" class="btn__icon--facebook"> </img>
-                        </div>
-                        <span class="auForm__social--title">Kết nối tới Facebook</span>
-                    </a>
-
-                    <a href="" class="btn btn--with-icon auForm__social--rightBtn ">
-                        <div class="btn__icon">
-                            <img alt="" src="assets/img/search.png" class="btn__icon--google"> </img">
-                        </div>
-                        <span class="auForm__social--title">Kết nối với Google</span>
-                    </a>
-                </div>
-            </div>
-
-
-
-            <div class="auForm">
-                <div class="auForm__container">
-                    <div class="auForm__header">
-                        <h3 class="auForm__register">Đăng nhập</h3>
-                        <span class="auForm__switch--btn">Đăng ký</span>
-                    </div>
-
-                    <div class="auForm__form">
-                        <div class="auForm__group">
-                            <input type="text" class="auForm__input" placeholder="Nhập tên người dùng">
-                            <input type="password" class="auForm__input" placeholder="Nhập mật khẩu">
-                        </div>
-                    </div>
-
-                    <div class="auForm__aside">
-                        <div class="auForm__help">
-                            <a href="" class="auForm__help-forgot auForm__help--text">Quên mật khẩu</a>
-                            <span class="auForm__help--separate"></span>
-                            <a href="" class="auForm__help-help auForm__help--text">Cần trợ giúp ?</a>
-                        </div>
-                    </div>
-
-                    <div class="auForm__controls">
-                        <button class="btn btn--sizeM auForm__controls-back btn--hover"> TRỞ LẠI</button>
-                        <button class="btn btn--sizeM btn--primary"> ĐĂNG NHẬP</button>
-                    </div>
-                </div>
-
-                <div class="auForm__social">
-                    <a href="" class="btn btn--with-icon auForm__social--leftBtn">
-                        <div class="btn__icon">
-                            <img alt="" src="assets/img/facebook.png" class="btn__icon--facebook"> </img>
-                        </div>
-                        <span class="auForm__social--title">Kết nối tới Facebook</span>
-                    </a>
-                    
-                    <a href="" class="btn btn--with-icon auForm__social--rightBtn ">
-                        <div class="btn__icon">
-                            <img alt="" src="assets/img/search.png" class="btn__icon--google"> </img">
-                        </div>
-                        <span class="auForm__social--title">Kết nối tới Google</span>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </div> -->
-
 </body>
 
 </html>
