@@ -45,6 +45,11 @@ ul {
   margin-left: -5px;
   margin-right: -5px;
 }
+.grid__column1{
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 8.333333%;
+}
 .grid__column2 {
   padding-left: 5px;
   padding-right: 5px;
