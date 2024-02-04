@@ -77,7 +77,8 @@ ul {
 }
 .background-img{
   width: 100%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: scale-down;
 }
 
 .span {
