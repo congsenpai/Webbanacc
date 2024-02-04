@@ -732,10 +732,10 @@
 
 .category {
   background-color: var(--decreaseWhite-color);
-  margin: 36px 0;
   border-radius: 6px;
   width: 100%;
   overflow: hidden;
+  margin: 36px 0;
 }
 .category-box--head {
   display: flex;
@@ -757,7 +757,7 @@
   width: 100%;
   overflow-y: auto;
   overflow-x: hidden;
-  height: 518px;
+  height: 410px;
 }
 .category-item {
   margin: 0 0 8px 0;
@@ -1104,15 +1104,16 @@
 img {vertical-align: middle;}
 .mySlides-img{
   border-radius: 6px;
+  padding-top: 2px;
 
 }
 /* Slideshow container */
 .slideshow-container {
   width: 100%;
   position: relative;
-  margin: 36px 0;
-  max-height: 600px;
+  max-height: 480px;
   overflow: hidden;
+  margin: 36px 0;
 }
 
 /* Caption text */
