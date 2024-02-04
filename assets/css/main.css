@@ -756,6 +756,7 @@
 .category-list {
   padding-left: 8px;
   width: 100%;
+  height: 380px;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -1104,7 +1105,6 @@
 }
 img {vertical-align: middle;}
 .mySlides-img{
-  padding-top: 2px;
   border-radius: 6px;
 }
 /* Slideshow container */
