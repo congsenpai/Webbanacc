@@ -1324,7 +1324,7 @@ img {
 .btn.server-item-choice {
   min-width: 80px;
   background-color: transparent;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -1384,7 +1384,7 @@ img {
 }
 
 .main-game-name {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.9rem;
   max-height: 5.7rem;
