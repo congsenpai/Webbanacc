@@ -1,8 +1,10 @@
 .header {
   height: var(--header-height);
-  background-image: linear-gradient(0,
-      var(--decreaseMain-color),
-      var(--primary-color));
+  background-image: linear-gradient(
+    0,
+    var(--decreaseMain-color),
+    var(--primary-color)
+  );
 }
 
 .header__navbar {
@@ -37,7 +39,7 @@
   position: relative;
 }
 
-.searchBar:focus~.header__search-history {
+.searchBar:focus ~ .header__search-history {
   display: block;
 }
 
@@ -1049,7 +1051,8 @@
   margin: auto;
   border-width: 0 20px 4px;
   border-style: solid;
-  border-color: transparent rgba(255, 215, 0, 0.8) transparent rgba(255, 215, 0, 0.8);
+  border-color: transparent rgba(255, 215, 0, 0.8) transparent
+    rgba(255, 215, 0, 0.8);
 }
 
 .sale-off--text {
@@ -1150,7 +1153,6 @@
 .star--light {
   font-size: 1rem;
   transform: scale(0.8);
-  display: none;
   color: gold;
 }
 
@@ -1183,8 +1185,6 @@
   background-image: url(/assets/img/Source/fanpage.png);
   background-position: center;
   height: 120px;
-
-
 }
 
 .fanpage-head {
@@ -1212,7 +1212,6 @@
   display: flex;
   justify-content: space-between;
   margin: 12px 8px 8px 8px;
-
 }
 
 .fanpage-body-text {
@@ -1292,11 +1291,11 @@ img {
 
 @keyframes fade {
   from {
-    opacity: .4
+    opacity: 0.4;
   }
 
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
@@ -1318,7 +1317,6 @@ img {
 }
 
 .server-item {
-
   margin-right: 14px;
   position: relative;
 }
@@ -1376,10 +1374,8 @@ img {
   transform: translateY(-2px);
 }
 
-
 .main-game-left {
   margin-left: 10px;
-
 }
 
 .main-game-left span {
@@ -1414,23 +1410,16 @@ img {
   background-color: var(--primary-color);
   color: var(--white-color);
 }
-.see-all-main-game{
+.see-all-main-game {
   margin-bottom: 80px;
 }
 /* conveyor belt */
-.belt--prev{
-font-size: 8rem;
+.hot-product-title {
+  padding: 20px 0;
+  border-top: 1px solid var(--Decreaseborder-color);
+  margin-bottom: 20px;
+}
+.grid__column-product.hot-box:nth-child(n + 6){
+  display: none;
+}
 
-}
-.belt--next{
-font-size: 8rem;
-
-}
-.belt{
-display: flex;
-align-items: center;  
-justify-content: center;
-}
-.belt-body{
-  display: flex;
-}
