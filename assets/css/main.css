@@ -1367,6 +1367,7 @@ img {
   text-decoration: none;
   max-height: 110px;
   cursor: pointer;
+  align-items: center;
 }
 
 .main-game-container:hover {
@@ -1389,12 +1390,12 @@ img {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.9rem;
-  max-height: 5.7rem;
+  max-height: 3.8rem;
   overflow: hidden;
   display: block;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   text-overflow: ellipsis;
 }
 
