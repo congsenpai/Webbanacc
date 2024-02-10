@@ -144,6 +144,7 @@
   height: 56vh;
   z-index: 1;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .cart__box::before {
@@ -493,7 +494,7 @@
   width: 260px;
   right: 0;
   border-radius: 2px;
-  z-index: 1;
+  z-index: 2;
   display: none;
   box-shadow: 0 1px 5px #b7b7b7;
   align-items: center;
@@ -1179,7 +1180,7 @@
 
 .footer-fanpage {
   width: 100%;
-  background-image: url(/assets/img/fanpage.png);
+  background-image: url(/assets/img/Source/fanpage.png);
   background-position: center;
   height: 120px;
 
@@ -1365,6 +1366,7 @@ img {
   will-change: transform;
   text-decoration: none;
   max-height: 110px;
+  cursor: pointer;
 }
 
 .main-game-container:hover {
