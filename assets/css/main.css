@@ -1414,12 +1414,54 @@ img {
   margin-bottom: 80px;
 }
 /* conveyor belt */
+
 .hot-product-title {
   padding: 20px 0;
-  border-top: 1px solid var(--Decreaseborder-color);
-  margin-bottom: 20px;
+  border-bottom: 1px solid var(--Decreaseborder-color);
+  margin-bottom: 40px;
 }
-.grid__column-product.hot-box:nth-child(n + 6){
+
+.belt-container {
+  position: relative;
+  width: 100%;
+  height: 372px;
+  align-items: center;
+}
+
+.btn-prev {
+  font-size: 3rem;
+  margin-left: 16px;
+  border-radius: 50%;
+  background-color: var(--decreaseWhite-color);
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+}
+.btn-next {
+  font-size: 3rem;
+  margin-left: 16px;
+  border-radius: 50%;
+  background-color: var(--decreaseWhite-color);
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.belt-item {
+  transition: transform 0.5s ease-in;
+}
+
+.belt-item:nth-child(n + 6) {
   display: none;
+}
+/* animation class */
+.hideContentLeft {
+  animation: hideContentLeft 0.5s ease-in forwards;
+}
+.moveToLeft {
+  animation: moveToLeft 0.5s ease-in forwards;
+}
+.showContentLeft {
+  animation: showContentLeft 0.5s ease-in forwards;
 }
 

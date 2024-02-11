@@ -144,6 +144,35 @@ ul {
     top: -100%+30px;
   }
 }
+@keyframes hideContentLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+@keyframes showContentLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveToLeft{
+  from{
+    transform: translateX(0);
+  }to{
+    transform: translateX(-100%);
+  }
+}
+
+
 
 /* modal */
 .modal {
