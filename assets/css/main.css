@@ -1464,4 +1464,14 @@ img {
 .showContentLeft {
   animation: showContentLeft 0.5s ease-in forwards;
 }
+.hideContentRight {
+  animation: hideContentRight 0.5s ease-in forwards;
+}
+.moveToRight {
+  animation: moveToRight 0.5s ease-in forwards;
+}
+.showContentRight {
+  animation: showContentRight 0.5s ease-in forwards;
+}
+
 
