@@ -1,102 +1,68 @@
-import { prependAndUpdateIndex } from './utils.js';
-
+// module belt scroll
+const belt = document.querySelector(".belt");
+const numberElements = document.querySelectorAll(".belt-item").length;
 document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("btn-prev").onclick = function () {
-    // Sự kiện 1
-    let beltItems = document.querySelectorAll(".belt-item");
-    // Kích hoạt animation
-    beltItems[0].classList.add("hideContentLeft");
+  const prevBtn = document.querySelector(".btn-prev");
+  const nextBtn = document.querySelector(".btn-next");
+  const scrollAmount = 220; // Số lượng pixel mỗi lần cuộn
+  const scrollInterval = 2000; // Thời gian giữa các cuộn tự động (ms)
+  let autoScrollInterval;
 
-    for (let i = 1; i < beltItems.length; i++) {
-      beltItems[i].classList.add("moveToLeft");
-    }
-
-    // Sau khi xử lý sự kiện 1, thực hiện sự kiện 2
-    setTimeout(function () {
-      beltItems[0].classList.remove("hideContentLeft");
-
-      document.querySelector(".belt").appendChild(beltItems[0]);
-      // Sự kiện 2
-      for (i = 1; i < beltItems.length; i++) {
-        beltItems[i].classList.remove("moveToLeft");
-      }
-      beltItems[5].style.display = "block";
-      beltItems[5].classList.add("showContentLeft");
-      beltItems[5].classList.remove("showContentLeft");
-      beltItems[0].style.display = "none";
-    }, 500);
-  };
-});
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   let autoSwitch = true; // Biến kiểm soát tự động chuyển item
-
-//   // Hàm xử lý sự kiện chuyển đổi item
-//   function switchItem() {
-//     let beltItems = document.querySelectorAll(".belt-item");
-//     beltItems[0].classList.add("hideContentLeft");
-
-//     for (let i = 1; i < beltItems.length; i++) {
-//       beltItems[i].classList.add("moveToLeft");
-//     }
-
-//     setTimeout(function () {
-//       beltItems[0].classList.remove("hideContentLeft");
-//       document.querySelector(".belt").appendChild(beltItems[0]);
-
-//       for (let i = 1; i < beltItems.length; i++) {
-//         beltItems[i].classList.remove("moveToLeft");
-//       }
-//       beltItems[5].style.display = "block";
-//       beltItems[5].classList.add("showContentLeft");
-//       beltItems[5].classList.remove("showContentLeft");
-//       beltItems[0].style.display = "none";
-//     }, 500);
-//   }
-
-//   // Gọi hàm switchItem mỗi 2 giây nếu autoSwitch là true
-//   let intervalId = setInterval(function () {
-//     if (autoSwitch) {
-//       switchItem();
-//     }
-//   }, 2000);
-
-//   // Xử lý sự kiện click của nút "prev"
-//   document.getElementById("btn-prev").onclick = function () {
-//     switchItem(); // Chuyển item khi click vào nút "prev"
-//   };
-
-//   // Xử lý sự kiện hover vào và rời đi khỏi phần tử "belt container"
-//   document.querySelector(".belt-container").addEventListener("mouseenter", function () {
-//     autoSwitch = false; // Dừng tự động chuyển item khi hover vào
-//   });
-
-//   document.querySelector(".belt-container").addEventListener("mouseleave", function () {
-//     autoSwitch = true; // Tiếp tục tự động chuyển item khi rời đi khỏi "belt container"
-//   });
-// });
-
-// khi nhấn vào nút di chuyển sang phải của beltItem
-document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("btn-next").onclick = function () {
-    const belt = document.querySelector(".belt");
-    let beltItems = document.querySelectorAll(".belt-item");
-    // Sự kiện 1
-    beltItems[4].classList.add("hideContentRight");
-
-    // Kích hoạt animation
-    for (let i = 0; i <= 3; i++) {
-      beltItems[i].classList.add("moveToRight");
-    }
-
-    // Sau khi xử lý sự kiện 1, thực hiện sự kiện 2
+  function scrollToLeft() {
+    belt.children[0].classList.add('hideContentLeft');
+    belt.style.transition = "transform 0.5s ease";
+    belt.style.transform = "translateX(-" + scrollAmount + "px)";
     setTimeout(() => {
-      for (let i = 0; i < 4; i++) {
-        beltItems[i].classList.remove("moveToRight");
-      }
-      prependAndUpdateIndex(belt, belt.lastElementChild);
-      belt.firstElementChild.classList.add("showContentRight");
-    }, 500);
-  };
-});
+      belt.children[0].classList.remove('hideContentLeft');
+      belt.children[5].classList.add('showContentLeft');
+      belt.appendChild(belt.firstElementChild);
+      belt.style.transition = "none";
+      belt.style.transform = "translateX(0)";
+    }, 300);
+  }
+  function scrollToRight() {
+    belt.style.transition = "transform 0.5s ease";
+    belt.style.transform = "translateX(" + scrollAmount + "px)";
+    belt.children[4].classList.add('hideContentRight');
+    setTimeout(() => {
+      belt.children[4].classList.remove('hideContentRight');
+      belt.insertBefore(belt.lastElementChild, belt.firstElementChild);
+      belt.children[0].classList.add('showContentRight');
+      belt.style.transition = "none";
+      belt.style.transform = "translateX(0)";
+    }, 300);
+   
+  }
 
+
+  function startAutoScroll() {
+      autoScrollInterval = setInterval(scrollToLeft, scrollInterval);
+  }
+
+  function stopAutoScroll() {
+    clearInterval(autoScrollInterval);
+  }
+
+  nextBtn.addEventListener("click", function () {
+    stopAutoScroll();
+    clearShowContent();
+    scrollToRight();
+
+  });
+  function clearShowContent() {
+    belt.querySelectorAll('.showContentLeft, .showContentRight').forEach(element => {
+        element.classList.remove('showContentLeft', 'showContentRight');
+    });
+}
+
+  prevBtn.addEventListener("click", function () {
+    stopAutoScroll();
+    clearShowContent();
+    scrollToLeft();
+  });
+
+  belt.addEventListener("mouseenter", stopAutoScroll);
+  belt.addEventListener("mouseleave", startAutoScroll);
+
+  startAutoScroll(); // Bắt đầu cuộn tự động khi trang được tải
+});

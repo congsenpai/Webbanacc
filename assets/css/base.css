@@ -164,13 +164,7 @@ ul {
     transform: translateX(0);
   }
 }
-@keyframes moveToLeft{
-  from{
-    transform: translateX(0);
-  }to{
-    transform: translateX(-100%);
-  }
-}
+
 @keyframes hideContentRight {
   from {
     opacity: 1;
@@ -193,14 +187,6 @@ ul {
   }
 }
 
-@keyframes moveToRight {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(100%);
-  }
-}
 
 
 

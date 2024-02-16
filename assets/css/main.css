@@ -1458,17 +1458,11 @@ img {
 .hideContentLeft {
   animation: hideContentLeft 0.5s ease-in forwards;
 }
-.moveToLeft {
-  animation: moveToLeft 0.5s ease-in forwards;
-}
 .showContentLeft {
   animation: showContentLeft 0.5s ease-in forwards;
 }
 .hideContentRight {
   animation: hideContentRight 0.5s ease-in forwards;
-}
-.moveToRight {
-  animation: moveToRight 0.5s ease-in forwards;
 }
 .showContentRight {
   animation: showContentRight 0.5s ease-in forwards;
