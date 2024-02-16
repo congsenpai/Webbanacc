@@ -1,3 +1,5 @@
+import { prependAndUpdateIndex } from './utils.js';
+
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("btn-prev").onclick = function () {
     // Sự kiện 1
@@ -88,8 +90,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Sau khi xử lý sự kiện 1, thực hiện sự kiện 2
-    {
-    }
     setTimeout(() => {
       for (let i = 0; i < 4; i++) {
         beltItems[i].classList.remove("moveToRight");
@@ -99,20 +99,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 500);
   };
 });
-// base
-function prependAndUpdateIndex(parentNode, newChild) {
-  // Lấy danh sách nút con hiện tại
-  var nodeList = parentNode.childNodes;
 
-  // Chèn phần tử mới vào đầu danh sách nút con
-  if (parentNode.firstChild) {
-    parentNode.insertBefore(newChild, parentNode.firstChild);
-  } else {
-    parentNode.appendChild(newChild);
-  }
-
-  // Cập nhật chỉ mục của các phần tử còn lại trong nodeList
-  for (var i = 0; i < nodeList.length; i++) {
-    nodeList[i].index = i; // Cập nhật chỉ mục cho mỗi phần tử
-  }
-}
