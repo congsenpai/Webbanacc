@@ -1,5 +1,5 @@
-/* mobile and tablet */
-@media (max-width: 1023px) {
+/* mobile and tablet mini */
+@media (max-width: 1024px) {
   :root {
     --header-height: 70px;
     --navbar-height: 0px;
@@ -17,11 +17,24 @@
   .header__cart--icon{
     font-size: 1.8rem;
   }
+  .category{
+    max-height: 410px;
+  }
+  .slideshow-container{
+    max-height: 410px;
+  }
+
 }
 /* tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
   .hide-on-tablet {
     display: none;
+  }
+  .slideshow-container{
+    max-height: 360px;
+  }
+  .category{
+    max-height: 360px;
   }
 }
 /* mobile */
@@ -31,7 +44,7 @@
   }
 }
 /* PC */
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
   .hide-on-pc {
     display: none;
   }

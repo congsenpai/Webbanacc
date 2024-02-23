@@ -1405,13 +1405,16 @@ img {
 .btn.main-game-all {
   margin-top: 40px;
   min-width: 200px;
-  margin-left: 43%;
   font-size: 1.6rem;
   background-color: var(--primary-color);
   color: var(--white-color);
+ 
 }
 .see-all-main-game {
+  display: flex !important;
   margin-bottom: 80px;
+  justify-content: center;
+  align-items: center;
 }
 /* conveyor belt */
 
