@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="/assets/css/reponsive.css">
     <script src="https://kit.fontawesome.com/25ee7c9f1c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <script type="module" src="/assets/javascript/main.js"></script>
@@ -17,8 +19,8 @@
 <body>
     <div class="app">
         <header class="header">
-            <div class="grid">
-                <nav class="header__navbar">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobile-and-tablet">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item">
                             <span class="header__navbar-item--text">Cửa hàng trực tuyến CS Shop</span>
@@ -153,9 +155,14 @@
 
 
                 </nav>
+
                 <!-- header search bar -->
                 <div class="header__search-bar">
-                    <a class="header__logo" href="/index.html">
+                    <!-- Category SideBar on Mobile and Tablet -->
+                    <div class="sidebar__category hide-on-pc">
+                        <i class="fa-solid fa-bars sidebar__icon"></i>
+                    </div>
+                    <a class="header__logo hide-on-tablet" href="/index.html">
                         <img src="assets/img/Source/logo.png" alt="" class="header__logo-img">
                     </a>
                     <div class="header__search">
@@ -198,8 +205,7 @@
                     <a class="header__cart" href="">
                         <div class="header__cart--icon">
                             <i class="fas fa-shopping-cart cart-size text-white"></i>
-                            <span class="header__cart--text"> Giỏ hàng</span>
-                            <span class="header__cart--notice">3</span>
+                            <span class="header__cart--text hide-on-mobile-and-tablet"> Giỏ hàng</span>
                         </div>
                         <!-- cart no item -->
                         <!-- <div class="cart__box cart__box--no-item">
@@ -312,9 +318,9 @@
             </div>
         </header>
         <div class="container">
-            <div class="grid ">
-                <div class="grid__row">
-                    <div class="grid__column3">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3 hide-on-mobile-and-tablet">
                         <nav class="category">
                             <div class="category-box--head">
                                 <i class="fa-solid fa-list"></i>
@@ -389,7 +395,7 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="grid__column9">
+                    <div class="col l-9">
                         <div class="slideshow-container">
                             <div class="mySlides fade">
                                 <img src="assets/img//Background/backgroundFGO.png" class="mySlides-img background-img">
@@ -435,8 +441,8 @@
                         </script>
                     </div>
                 </div>
-                <div class="grid__row">
-                    <div class="grid__column12">
+                <div class="row">
+                    <div class=" col l-12">
                         <h1 class="main-game-list">Danh sách game</h1>
                         <ul class="server-list">
                             <li class="server-item">
@@ -454,8 +460,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="grid__row">
-                    <div class="grid__column3">
+                <div class="row">
+                    <div class=" col l-3">
                         <div class="main-game-container">
                             <div class="main-game-left">
                                 <span class="main-game-name">Genshin Impact</span>
@@ -468,7 +474,7 @@
 
                         </div>
                     </div>
-                    <div class="grid__column3">
+                    <div class=" col l-3">
                         <div class="main-game-container">
                             <div class="main-game-left">
                                 <span class="main-game-name">Project Sekai: Colorful Stage! Feat. Hatsune Miku</span>
@@ -481,7 +487,7 @@
 
                         </div>
                     </div>
-                    <div class="grid__column3">
+                    <div class=" col l-3">
                         <div class="main-game-container">
                             <div class="main-game-left">
                                 <span class="main-game-name">Fate Grand Order</span>
@@ -493,7 +499,7 @@
 
                         </div>
                     </div>
-                    <div class="grid__column3">
+                    <div class=" col l-3">
                         <div class="main-game-container">
                             <div class="main-game-left">
                                 <span class="main-game-name">AzurLane</span>
@@ -507,8 +513,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid__row">
-                    <div class="grid__column3">
+                <div class="row">
+                    <div class=" col l-3">
                         <div class="main-game-container">
                             <div class="main-game-left">
                                 <span class="main-game-name">Honkai Star Rail</span>
@@ -521,7 +527,7 @@
 
                         </div>
                     </div>
-                    <div class="grid__column3">
+                    <div class=" col l-3">
                         <div class="main-game-container">
                             <div class="main-game-left">
                                 <span class="main-game-name">Princess Connect! Re:Dive</span>
@@ -534,7 +540,7 @@
 
                         </div>
                     </div>
-                    <div class="grid__column3">
+                    <div class=" col l-3">
                         <div class="main-game-container">
                             <div class="main-game-left">
                                 <span class="main-game-name">Blue Archive</span>
@@ -547,7 +553,7 @@
 
                         </div>
                     </div>
-                    <div class="grid__column3">
+                    <div class=" col l-3">
                         <div class="main-game-container">
                             <div class="main-game-left">
                                 <span class="main-game-name">Arknights</span>
@@ -561,8 +567,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid__row">
-                    <div class="grid__column3">
+                <div class="row">
+                    <div class=" col l-3">
                         <div class="main-game-container">
                             <div class="main-game-left">
                                 <span class="main-game-name">Epic Seven</span>
@@ -575,7 +581,7 @@
 
                         </div>
                     </div>
-                    <div class="grid__column3">
+                    <div class=" col l-3">
                         <div class="main-game-container">
                             <div class="main-game-left">
                                 <span class="main-game-name">Honkai Impact 3</span>
@@ -588,7 +594,7 @@
 
                         </div>
                     </div>
-                    <div class="grid__column3">
+                    <div class=" col l-3">
                         <div class="main-game-container">
                             <div class="main-game-left">
                                 <span class="main-game-name">Punishing: Gray Raven</span>
@@ -601,7 +607,7 @@
 
                         </div>
                     </div>
-                    <div class="grid__column3">
+                    <div class=" col l-3">
                         <div class="main-game-container">
                             <div class="main-game-left">
                                 <span class="main-game-name">SLIME - ISEKAI Memories</span>
@@ -615,23 +621,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid__row see-all-main-game">
-                    <div class="grid__column12">
+                <div class="row see-all-main-game">
+                    <div class=" col l-12">
                         <button class="btn main-game-all">Xem tất cả</button>
                     </div>
                 </div>
-                <div class="grid__row">
-                    <div class="grid__column12 hot-product-title">
+                <div class="row">
+                    <div class="col l-12 hot-product-title">
                         <h1>Sản phẩm nổi bật</h1>
                     </div>
                 </div>
-                <div class="grid__row belt-container">
-                    <div class="grid__column1">
+                <div class="row belt-container">
+                    <div class="col l-1">
                         <button class="fa-solid fa-angles-left btn-prev" id="btn-prev"></button>
                     </div>
-                    <div class="grid__column10">
-                        <div class="grid__row belt">
-                            <div class="belt-item grid__column-product ">
+                    <div class="col l-10">
+                        <div class="row belt">
+                            <div class="belt-item col l-2-4 ">
                                 <!-- product item -->
                                 <a href="" class="home-product-item">
                                     <div class="home-product-item-favourite">
@@ -670,7 +676,7 @@
 
                                 </a>
                             </div>
-                            <div class="belt-item grid__column-product">
+                            <div class="belt-item col l-2-4">
                                 <!-- product item -->
                                 <a href="" class="home-product-item">
                                     <div class="home-product-item-favourite">
@@ -709,7 +715,7 @@
 
                                 </a>
                             </div>
-                            <div class="belt-item grid__column-product">
+                            <div class="belt-item col l-2-4">
                                 <!-- product item -->
                                 <a href="" class="home-product-item">
                                     <div class="home-product-item-favourite">
@@ -748,7 +754,7 @@
 
                                 </a>
                             </div>
-                            <div class="belt-item grid__column-product">
+                            <div class="belt-item col l-2-4">
                                 <!-- product item -->
                                 <a href="" class="home-product-item">
                                     <div class="home-product-item-favourite">
@@ -787,7 +793,7 @@
 
                                 </a>
                             </div>
-                            <div class="belt-item grid__column-product">
+                            <div class="belt-item col l-2-4">
                                 <!-- product item -->
                                 <a href="" class="home-product-item">
                                     <div class="home-product-item-favourite">
@@ -826,7 +832,7 @@
 
                                 </a>
                             </div>
-                            <div class="belt-item grid__column-product">
+                            <div class="belt-item col l-2-4">
                                 <!-- product item -->
                                 <a href="" class="home-product-item">
                                     <div class="home-product-item-favourite">
@@ -865,7 +871,7 @@
 
                                 </a>
                             </div>
-                            <div class="belt-item grid__column-product">
+                            <div class="belt-item col l-2-4">
                                 <!-- product item -->
                                 <a href="" class="home-product-item">
                                     <div class="home-product-item-favourite">
@@ -904,7 +910,7 @@
 
                                 </a>
                             </div>
-                            <div class="belt-item grid__column-product">
+                            <div class="belt-item col l-2-4">
                                 <!-- product item -->
                                 <a href="" class="home-product-item">
                                     <div class="home-product-item-favourite">
@@ -945,7 +951,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid__column1">
+                    <div class="col l-1">
                         <button id="btn-next" class="fa-solid fa-angles-right btn-next"></button>
                     </div>
 
@@ -955,9 +961,9 @@
         </div>
 
         <div class="footer">
-            <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__column-product">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-2-4">
                         <div class="footer__heading">CSSHOP.COM</div>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -968,7 +974,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-product">
+                    <div class="col l-2-4">
                         <div class="footer__heading">
                             LIÊN HỆ
                         </div>
@@ -990,7 +996,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-product">
+                    <div class="col l-2-4">
                         <div class="footer__heading">
                             TÀI KHOẢN
                         </div>
@@ -1006,7 +1012,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-product">
+                    <div class="col l-2-4">
                         <div class="footer__heading">
                             CHÍNH SÁCH BẢO HÀNH
                         </div>
@@ -1019,7 +1025,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-product">
+                    <div class="col l-2-4">
                         <div class="footer-fanpage">
                             <div class="fanpage-head">
                                 <div class="fanpage-head__avatar">

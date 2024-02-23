@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="/assets/css/reponsive.css">
     <script src="https://kit.fontawesome.com/25ee7c9f1c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="assets/javascript/main.js"></script>
@@ -15,8 +17,8 @@
 
 <body>
     <header class="header">
-        <div class="grid">
-            <nav class="header__navbar">
+        <div class="grid wide">
+            <nav class="header__navbar hide-on-mobile-and-tablet">
                 <ul class="header__navbar-list">
                     <li class="header__navbar-item">
                         <span class="header__navbar-item--text">Cửa hàng trực tuyến CS Shop</span>
@@ -146,7 +148,7 @@
             </nav>
             <!-- header search bar -->
             <div class="header__search-bar">
-                <a class="header__logo" href="/index.html">
+                <a class="header__logo hide-on-tablet" href="/index.html">
                     <img src="assets/img/Source/logo.png" alt="" class="header__logo-img">
                 </a>
                 <div class="header__search">
@@ -190,7 +192,6 @@
                     <div class="header__cart--icon">
                         <i class="fas fa-shopping-cart cart-size text-white"></i>
                         <span class="header__cart--text"> Giỏ hàng</span>
-                        <span class="header__cart--notice">3</span>
                     </div>
                     <!-- cart no item -->
                     <!-- <div class="cart__box cart__box--no-item">
@@ -390,7 +391,7 @@
 
                 </div>
                 <div class="grid__column10">
-                    <div class="home__filter">
+                    <div class="home__filter hide-on-mobile-and-tablet">
                         <div class="home__filter-left-container">
                             <span class="home__filter-text--left">Xắp xếp theo</span>
                             <button class="btn home__filter-normal">Mới nhất</button>

@@ -107,12 +107,13 @@
   width: 130px;
   border: 1px solid var(--white-color);
   border-radius: 4px;
-  height: 45px;
+  height: 40px;
   align-items: center;
   text-decoration: none;
   margin-left: 20px;
   position: relative;
   background-color: transparent;
+  justify-content: center;
 }
 
 .header__cart:hover .cart__box {
@@ -209,7 +210,6 @@
   top: 0%;
   right: 0%;
   font-weight: 500;
-  display: none;
 }
 
 .cart__box--has-item--heading {
