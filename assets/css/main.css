@@ -18,7 +18,7 @@
   height: var(--searchbar--height);
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0 10px;
 }
 
@@ -127,15 +127,15 @@
 }
 
 .header__cart--text {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: var(--white-color);
 }
 
 .cart__box {
   background-color: var(--white-color);
   position: absolute;
-  top: 92%;
-  width: 310%;
+  top: 100%;
+  width: 250%;
   right: 0px;
   margin: 4px 2px;
   border-radius: 2px;
@@ -144,30 +144,19 @@
   animation: fadeIn ease-in 0.2s;
   display: none;
   cursor: default;
-  height: 56vh;
+  height: 250px;
   z-index: 1;
   overflow-y: auto;
   overflow-x: hidden;
 }
-
-.cart__box::before {
-  content: "";
-  border-width: 8px 16px;
-  border-style: solid;
-  border-color: transparent transparent var(--white-color) transparent;
-  position: absolute;
-  top: -14px;
-  right: 4px;
-}
-
-.cart__box::after {
+.header__cart::after {
   position: absolute;
   content: "";
   display: block;
   border: 10px solid transparent;
   width: 90%;
-  top: -10px;
-  right: -2px;
+  top: 30px;
+  right: -10px;
 }
 
 /* cart box no item */
@@ -313,8 +302,8 @@
 
 .cart__box--has-item-btn {
   display: none;
-  float: inline-end;
-  margin: 0 8px 8px 0;
+  margin-left: 34%;
+  margin-bottom: 10px;
 }
 
 /* Right of select bar */
@@ -327,7 +316,10 @@
   cursor: pointer;
   position: relative;
 }
-
+.select__label {
+  margin-top: 24px;
+  height: 40px;
+}
 .select__label:hover .header__search-select--option {
   display: inline-block;
 }
@@ -841,11 +833,11 @@
 
 .category-box--head i {
   margin-left: 8px;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 .category-heading {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   margin: 0 10px;
   padding: 6px 0;
   font-weight: 600;
@@ -1408,7 +1400,6 @@ img {
   font-size: 1.6rem;
   background-color: var(--primary-color);
   color: var(--white-color);
- 
 }
 .see-all-main-game {
   display: flex !important;
@@ -1470,5 +1461,119 @@ img {
 .showContentRight {
   animation: showContentRight 0.5s ease-in forwards;
 }
+/* sideBar on mobile and tablet */
+.sidebar__category {
+  display: none;
+}
+.sidebar__content {
+  position: fixed;
+  background-color: var(--white-color);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 40%;
+  z-index: 3;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all linear 0.2s;
+}
+.sidebar__category:hover {
+  cursor: pointer;
+}
+.sidebar__header {
+  height: 60px;
+  background-color: var(--decreaseMain-color);
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  padding: 0 20px;
+}
+.sidebar__list {
+  margin-top: 30px;
+}
+.sidebar-login a:nth-child(1) {
+  font-size: 1.8rem;
+  font-size: 800;
+}
+.sidebar-login a {
+  display: block;
+  color: var(--white-color);
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  padding-left: 20px;
+}
 
+.sidebar__item {
+  top: 0;
+  height: 40px;
+  margin: 20px 0;
+  font-weight: 400;
+}
+.sidebar__item a {
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+.sidebar__item i {
+  margin-right: 20px;
+  padding-left: 20px;
+}
+.sidebar__checkbox:checked ~ .modal__overlay {
+  display: block;
+}
+.sidebar__checkbox:checked ~ .sidebar__content {
+  transform: translateX(0%);
+  opacity: 1;
+}
+.sidebar__checkbox {
+  display: none !important;
+}
+.sidebar__close {
+  position: absolute;
+  font-size: 2rem;
+  top: 0;
+  right: 0;
+  padding: 10px 10px 0 60px;
+  color: var(--white-color);
+}
+.sidebar__icon {
+  padding-right: 10px;
+}
+.search-mobile--icon {
+  color: var(--white-color);
+  font-size: 2.4rem;
+}
+.searchbar-mobile {
+  padding-right: 10px;
+  display: none;
+}
+.searchbar-mobile:hover {
+  cursor: pointer;
+}
+.searchbar-on-mobile {
+  position: absolute;
+  top: 60px;
+  height: 45px;
+  width: 100%;
+  left: 0;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px #b7b7b7;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all linear 0.1s;
+  display: none;
+  z-index: 3;
+  opacity: 0;
+}
+.searchbar-checkbox:checked ~ .searchbar-on-mobile {
+  display: block;
+  opacity: 1;
+}
 
+.searchbar-checkbox:checked ~ .modal__overlay {
+  display: block;
+}
+.sidebar__close:hover {
+  cursor: pointer;
+}

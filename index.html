@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/base.css">
     <link rel="stylesheet" href="/assets/css/grid.css">
-    <link rel="stylesheet" href="/assets/css/reponsive.css">    
+    <link rel="stylesheet" href="/assets/css/reponsive.css">
     <script src="https://kit.fontawesome.com/25ee7c9f1c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <script type="module" src="/assets/javascript/main.js"></script>
@@ -159,13 +159,84 @@
                 <!-- header search bar -->
                 <div class="header__search-bar">
                     <!-- Category SideBar on Mobile and Tablet -->
-                    <div class="sidebar__category hide-on-pc">
+                    <label for="sidebar-input" class="sidebar__category ">
                         <i class="fa-solid fa-bars sidebar__icon"></i>
+                    </label>
+                    <input type="checkbox" name="" id="sidebar-input" class="sidebar__checkbox">
+                    <label for="sidebar-input" class="modal__overlay">
+                    </label>
+                    <div class="sidebar__content">
+                        <div class="sidebar__header">
+                            <a href="">
+                                <img src="/assets/img/Source/user.png" alt="" class="icon-fla--medium">
+                            </a>
+
+                            <div class="sidebar-login">
+                                <a href="">Đăng nhập</a>
+                                <a href="">Xem nhiều thông tin hơn</a>
+                            </div>
+                            <label for="sidebar-input" class="fa-solid fa-x sidebar__close"></label>
+                        </div>
+                        <ul class="sidebar__list">
+                            <li class="sidebar__item">
+                                <a href="">
+                                    <i class="fa-solid fa-house"></i>
+                                    <span>Trang chủ</span>
+                                </a>
+
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                    <span>Hướng dẫn mua acc</span>
+                                </a>
+
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="">
+                                    <i class="fa-regular fa-credit-card"></i>
+                                    <span>Hình thức thanh toán</span>
+                                </a>
+
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="">
+                                    <i class="fa-solid fa-money-bill"></i>
+                                    <span>Khách vip của shop</span>
+                                </a>
+
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="">
+                                    <i class="fa-solid fa-envelope-open-text"></i>
+                                    <span>Hỗ trợ</span>
+                                </a>
+
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="">
+                                    <i class="fa-brands fa-facebook-messenger"></i>
+                                    <span>Nhắn tin cho shop</span>
+                                </a>
+
+                            </li>
+
+                        </ul>
                     </div>
+                    <input type="checkbox" name="" id="searchbar-input" class="searchbar-checkbox"
+                        style="display: none!important;">
+                    <label for="searchbar-input" class="searchbar-mobile">
+                        <i class="fa-solid fa-magnifying-glass search-mobile--icon"></i>
+                    </label>
+                    <input type="text" class="searchbar-on-mobile">
+
+                    <label for="searchbar-input" class="modal__overlay"></label>
+
+
                     <a class="header__logo hide-on-tablet" href="/index.html">
                         <img src="assets/img/Source/logo.png" alt="" class="header__logo-img">
                     </a>
-                    <div class="header__search">
+                    <div class="header__search hide-on-mobile">
                         <div class="header__search-input-wrap">
                             <input type="text" placeholder="Nhập tên game hoặc tags để tìm kiếm" class="searchBar">
                             <div class="header__search-history">
@@ -446,16 +517,16 @@
                         <h1 class="main-game-list">Danh sách game</h1>
                         <ul class="server-list">
                             <li class="server-item hide-on-mobile">
-                                <button class="btn server-item-choice ">Tất cả</button>
+                                <button class="btn server-item-choice " autofocus>Tất cả</button>
                             </li>
                             <li class="server-item">
                                 <button class="btn server-item-choice">Global/Asia/Sea</button>
                             </li>
                             <li class="server-item">
-                                <button class="btn server-item-choice">Japan/Nhật Bản</button>
+                                <button class="btn server-item-choice">Nhật Bản</button>
                             </li>
                             <li class="server-item">
-                                <button class="btn server-item-choice">Trung Quốc/Server khác</button>
+                                <button class="btn server-item-choice">Server khác</button>
                             </li>
                         </ul>
                     </div>
